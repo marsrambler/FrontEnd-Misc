@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Layout Example</title>
+    <style>
+        .box {
+            margin: 0 0 0px;
+            display: flex;
+        }
+
+        .box-2 {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .box-3 {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .box-4 {
+            justify-content: space-around;
+        }
+
+        .box-item {
+            width: 350px;
+            height: 100px;
+            line-height: 20px;
+            vertical-align: middle;
+            margin: 5px;
+            text-align: center;
+            background-color: #EDEDED;
+        }
+
+        .box-item-LL {
+            width: 200px;
+            height: 100px;
+            line-height: 20px;
+            vertical-align: middle;
+            margin: 5px;
+            text-align: center;
+            background-color: #EDEDED;
+        }
+    </style>
+</head>
+<body>
+<div class="box box-3">
+    <div class="box box-2">
+        <div class="box-item">
+        </div>
+
+        <div class="box-item">
+        </div>
+    </div>
+    <div class="box box-2">
+        <div class="box box-3">
+            <div class="box-item">
+            </div>
+        </div>
+        <div class="box box-3">
+            <div class="box-item">
+            </div>
+            <div class="box-item">
+            </div>
+            <div class="box-item">
+            </div>
+        </div>
+    </div>
+    <div class="box box-2">
+        <div class="box-item">
+        </div>
+        <div class="box-item">
+        </div>
+    </div>
+    <div class="box box-2">
+        <div class="box-item">
+        </div>
+        <div class="box-item">
+        </div>
+    </div>
+</div>
+</body>
+</html>
